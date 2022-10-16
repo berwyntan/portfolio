@@ -101,7 +101,7 @@ export default function Album() {
                       padding: 0.2
                     }}
                     src={card.photo}
-                    alt="random"
+                    alt="project-image"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography variant='overline'>

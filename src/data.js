@@ -1,7 +1,7 @@
 export default [
     {
         techStack: "MongoDB, Express, React, Node, Cypress, Tailwind CSS",
-        photo: "./src/assets/cypress-testing.gif",
+        photo: "https://drive.google.com/uc?id=1NHqG_6Et5fpcRh72ZgKuOsQ5IF4QM5R9",
         header: "Astronomy App II",
         subHeader: "personal project",
         description: "Instagram/Pinterest clone using NASA's API",
