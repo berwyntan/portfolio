@@ -10,7 +10,7 @@ export default [
     },
     {
         techStack: "React, Tailwind CSS, Airtable",
-        photo: "./src/assets/infinite-scroll.gif",
+        photo: "https://drive.google.com/uc?id=1XsNnY9Wn-HE6f6SReGA5QtJjrkdZEe11",
         header: "Astronomy App",
         subHeader: "General Assembly project",
         description: "Initial frontend version of the app",
@@ -19,7 +19,7 @@ export default [
     },
     {
         techStack: "HTML, CSS, Javascript, jQuery",
-        photo: "./src/assets/candy-crush.gif",
+        photo: "https://drive.google.com/uc?id=1qs8V0gc7MumliMOdrerU2JUs_VheAwYj",
         header: "Candy Crush Clone",
         subHeader: "General Assembly project",
         description: "A web browser version of the popular game",
