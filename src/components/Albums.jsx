@@ -100,7 +100,7 @@ export default function Album() {
                       maxHeight: 400,
                       padding: 0.2
                     }}
-                    image={card.photo}
+                    src={card.photo}
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
