@@ -12,7 +12,22 @@ import './App.css'
 
 function App() {
   
-  const theme = createTheme();
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#58a5f0',
+        main: '#0277bd',
+        dark: '#004c8c',
+        contrastText: '#ffffff',
+      },
+      secondary: {
+        light: '#ff844c',
+        main: '#f4511e',
+        dark: '#b91400',
+        contrastText: '#000000',
+      },
+    },
+  });
 
   return (
     <ThemeProvider theme={theme}>

@@ -12,30 +12,34 @@ import { Button } from '@mui/material';
 
 export default function Layout () {
 
+    
+
     return (
         <>
         <AppBar position="sticky">
         <Toolbar>
           
-          <Box sx={{display: 'flex', justifyContent: 'flex-start', flexGrow: 1}}>
-            
-            {/* <Typography variant="h6" color="inherit" noWrap align="left" sx={{ ml:2}}>
-                <Link color="inherit" underline="none" href="/">PORTFOLIO</Link>                
-            
-            </Typography> */}
-            <Button color='inherit' size='large'>PORTFOLIO</Button>
-            
+          <Box sx={{display: 'flex', justifyContent: 'flex-start', flexGrow: 1}}>           
+            <Button component="a" href="/" color='inherit' size='large' variant='solid' sx={{ '&:hover': { color: '#d7d8d9' }}}>PORTFOLIO</Button>
           </Box>  
             
           <Box sx={{justifyContent: 'flex-end'}}>
-            <IconButton color='inherit' edge='start' sx={{ mr: 2 }}>
-                <LinkedInIcon />
-            </IconButton>      
+            <IconButton color='inherit' edge='start' sx={{ mr: 2}} >
+                <Link href="https://www.linkedin.com/in/berwyn-tan/" color='inherit' target="_blank" rel="noopener" sx={{ '&:hover': { color: '#d7d8d9' }}}>
+                    <LinkedInIcon />
+                </Link>                
+            </IconButton>   
+
             <IconButton color='inherit' edge='start' sx={{ mr: 2 }} >
-                <GitHubIcon />
-            </IconButton>      
+                <Link href="https://github.com/berwyntan" color='inherit' target="_blank" rel="noopener" sx={{ '&:hover': { color: '#d7d8d9' }}}>
+                    <GitHubIcon /> 
+                </Link>               
+            </IconButton>  
+                
             <IconButton color='inherit' edge='start' sx={{ mr: 2 }} >
-                <EmailIcon />
+                <Link href="mailto:berwyntan@gmail.com" color='inherit' target="_blank" rel="noopener" sx={{ '&:hover': { color: '#d7d8d9' }}}>
+                    <EmailIcon />
+                </Link>                
             </IconButton>     
           </Box>           
         </Toolbar>

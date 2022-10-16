@@ -32,7 +32,7 @@ export default function About () {
             //   variant="h6"  
               sx={{ my: 2 }}           
             >
-              Junior software engineer with a previous career in interior design. Self starter with interest in technology, 
+              Junior software engineer with a previous career in interior design. Self starter with interests in technology, 
               psychology and decision making.
               
             </Typography>
@@ -46,6 +46,7 @@ export default function About () {
               stakeholder management, design and business processes.
               
             </Typography>
+
             <Typography
               variant="h5"
               align="center"
@@ -54,6 +55,7 @@ export default function About () {
             >
               Tech Stack
             </Typography>
+
             <Typography variant="body1" sx={{ mb: 1 }}>
               MongoDB | Express | React | Node
             </Typography>
@@ -62,6 +64,23 @@ export default function About () {
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
               HTML | CSS | Javascript | jQuery | Git
+            </Typography>
+
+            <Typography
+              variant="h5"
+              align="center"
+              color="text.primary"
+              gutterBottom
+              sx={{ mt: 2 }}
+            >
+              Education
+            </Typography>
+
+            <Typography variant="body1" sx={{ mb: 1 }}>
+              General Assembly: Software Engineering Immersive - 2022
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 4 }}>
+              Nanyang Technological University: Mechanical Engineering - 2005 to 2009
             </Typography>
 
         </Container>

@@ -63,7 +63,7 @@ export default function Album() {
               Hi, I am Berwyn.
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              From interior design to software engineering. Exploring technology.
+              Exploring technology. Switched from interior design to software engineering. 
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -71,7 +71,10 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">PROFILE</Button>
+              <Link href="/about" color='inherit' underline="none">
+                <Button variant="contained">PROFILE</Button>
+              </Link>  
+              
               {/* <Button variant="outlined">Get in touch</Button> */}
             </Stack>
           </Container>
@@ -80,7 +83,7 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cardData.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card.appLink} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -115,8 +118,8 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">App</Button>
-                    <Button size="small">Github</Button>
+                    <Button component="a" href={card.appLink} size="small" target="_blank" rel="noopener">App</Button>
+                    <Button component="a" href={card.githubLink} size="small" target="_blank" rel="noopener">Github</Button>
                   </CardActions>
                 </Card>
               </Grid>
