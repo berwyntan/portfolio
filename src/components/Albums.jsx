@@ -42,29 +42,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   return (
-    // <ThemeProvider theme={theme}>
-    //   <CssBaseline />
-    <>
-      {/* <AppBar position="sticky">
-        <Toolbar>
-          <Box sx={{justifyContent: 'flex-start', flexGrow: 1}}>
-            <Typography variant="h6" color="inherit" noWrap align="left" sx={{ ml:2}}>
-                PORTFOLIO
-            </Typography>
-          </Box>     
-          <Box sx={{justifyContent: 'flex-end'}}>
-            <IconButton color='inherit' edge='start' sx={{ mr: 2 }}>
-                <LinkedInIcon />
-            </IconButton>      
-            <IconButton color='inherit' edge='start' sx={{ mr: 2 }} >
-                <GitHubIcon />
-            </IconButton>      
-            <IconButton color='inherit' edge='start' sx={{ mr: 2 }} >
-                <EmailIcon />
-            </IconButton>     
-          </Box>           
-        </Toolbar>
-      </AppBar> */}
+      <>  
       <main>
         {/* Hero unit */}
         <Box
@@ -77,7 +55,7 @@ export default function Album() {
           <Container maxWidth="sm">
             <Typography
               component="h1"
-              variant="h2"
+              variant="h3"
               align="center"
               color="text.primary"
               gutterBottom
@@ -93,8 +71,8 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Get in touch</Button>
-              <Button variant="outlined">About me</Button>
+              <Button variant="contained">PROFILE</Button>
+              {/* <Button variant="outlined">Get in touch</Button> */}
             </Stack>
           </Container>
         </Box>
@@ -126,7 +104,7 @@ export default function Album() {
                     <Typography variant='overline'>
                       Tech stack:
                     </Typography>
-                    <Typography gutterBottom variant="body1" component="h2">
+                    <Typography gutterBottom variant="body1">
                       {card.techStack}
                     </Typography>
                     <Typography variant='overline'>
@@ -147,7 +125,7 @@ export default function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+      {/* <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
@@ -160,9 +138,9 @@ export default function Album() {
           Something here to give the footer a purpose!
         </Typography>
         <Copyright />
-      </Box>
+      </Box> */}
       {/* End footer */}
     </>
-    // </ThemeProvider>
+    
   );
 }

@@ -7,7 +7,8 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import Link from '@mui/material/Link';
+import { Button } from '@mui/material';
 
 export default function Layout () {
 
@@ -15,11 +16,17 @@ export default function Layout () {
         <>
         <AppBar position="sticky">
         <Toolbar>
-          <Box sx={{justifyContent: 'flex-start', flexGrow: 1}}>
-            <Typography variant="h6" color="inherit" noWrap align="left" sx={{ ml:2}}>
-                PORTFOLIO
-            </Typography>
-          </Box>     
+          
+          <Box sx={{display: 'flex', justifyContent: 'flex-start', flexGrow: 1}}>
+            
+            {/* <Typography variant="h6" color="inherit" noWrap align="left" sx={{ ml:2}}>
+                <Link color="inherit" underline="none" href="/">PORTFOLIO</Link>                
+            
+            </Typography> */}
+            <Button color='inherit' size='large'>PORTFOLIO</Button>
+            
+          </Box>  
+            
           <Box sx={{justifyContent: 'flex-end'}}>
             <IconButton color='inherit' edge='start' sx={{ mr: 2 }}>
                 <LinkedInIcon />
