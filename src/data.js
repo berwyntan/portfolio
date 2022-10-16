@@ -1,7 +1,7 @@
 export default [
     {
         techStack: "MongoDB, Express, React, Node, Cypress, Tailwind CSS",
-        photo: "/src/assets/cypress-testing.gif",
+        photo: "./src/assets/cypress-testing.gif",
         header: "Astronomy App II",
         subHeader: "personal project",
         description: "Instagram/Pinterest clone using NASA's API",
@@ -10,7 +10,7 @@ export default [
     },
     {
         techStack: "React, Tailwind CSS, Airtable",
-        photo: "/src/assets/infinite-scroll.gif",
+        photo: "./src/assets/infinite-scroll.gif",
         header: "Astronomy App",
         subHeader: "General Assembly project",
         description: "Initial frontend version of the app",
@@ -19,7 +19,7 @@ export default [
     },
     {
         techStack: "HTML, CSS, Javascript, jQuery",
-        photo: "/src/assets/candy-crush.gif",
+        photo: "./src/assets/candy-crush.gif",
         header: "Candy Crush Clone",
         subHeader: "General Assembly project",
         description: "A web browser version of the popular game",
