@@ -3,8 +3,8 @@ export default [
         techStack: "MongoDB, Express, React, Node, Cypress, Tailwind CSS",
         photo: "https://drive.google.com/uc?id=1NHqG_6Et5fpcRh72ZgKuOsQ5IF4QM5R9",
         header: "Astronomy App II",
-        subHeader: "personal project",
-        description: "Instagram/Pinterest clone using NASA's API",
+        subHeader: "Personal project",
+        description: "Added backend, individual routes, authentication, validation, persistent login and automated testing",
         appLink: "https://astronomy-app-2.vercel.app",
         githubLink: "https://github.com/berwyntan/astronomy-app-2"
     },
@@ -13,7 +13,7 @@ export default [
         photo: "https://drive.google.com/uc?id=1XsNnY9Wn-HE6f6SReGA5QtJjrkdZEe11",
         header: "Astronomy App",
         subHeader: "General Assembly project",
-        description: "Initial frontend version of the app",
+        description: "Instagram/Pinterest clone using NASA's API - Frontend only",
         appLink: "https://astronomy-photo-app.vercel.app",
         githubLink: "https://github.com/berwyntan/astronomy-photo-app"
     },
