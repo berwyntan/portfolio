@@ -1,7 +1,6 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+import { useState } from 'react';
+
 import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardActions from '@mui/material/CardActions';
@@ -15,10 +14,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import IconButton from '@mui/material/IconButton';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import Tooltip from '@mui/material/Tooltip';
+
 
 import cardData from '../data';
 import { padding } from '@mui/system';
@@ -41,6 +38,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 export default function Album() {
+
   return (
       <>  
       <main>
@@ -82,10 +80,27 @@ export default function Album() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cardData.map((card) => (
+            {cardData.map((card) => {
+              
+              // state and handlers to load gif on individual card hover
+              const [isActive, setIsActive] = useState(false);
+
+              const handleMouseover = () => {
+                setIsActive(true);
+                // console.log("mouse over")
+              }
+              const handleMouseOut = () => {
+                setIsActive(false);
+                // console.log("mouse out")
+              }
+
+              return (
               <Grid item key={card.appLink} xs={12} sm={6} md={4}>
+                <Tooltip disableFocusListener disableTouchListener title="Keep hovering to preview">
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  onMouseOver={handleMouseover}
+                  onMouseOut={handleMouseOut}
                 >
                   <CardHeader 
                     title={card.header}
@@ -100,7 +115,7 @@ export default function Album() {
                       maxHeight: 400,
                       padding: 0.2
                     }}
-                    src={card.photo}
+                    src={ isActive ? card.gif : card.preview }
                     alt="project-image"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
@@ -118,12 +133,13 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button component="a" href={card.appLink} size="small" target="_blank" rel="noopener">App</Button>
-                    <Button component="a" href={card.githubLink} size="small" target="_blank" rel="noopener">Github</Button>
+                    <Button component="a" href={card.appLink} size="small" target="_blank" rel="noopener" variant="contained" sx={{ '&:hover': { color: '#ebeced' }}}>App</Button>
+                    <Button component="a" href={card.githubLink} size="small" target="_blank" rel="noopener" variant="contained" sx={{ '&:hover': { color: '#ebeced' }}}>Github</Button>
                   </CardActions>
                 </Card>
+                </Tooltip>
               </Grid>
-            ))}
+            )})}
           </Grid>
         </Container>
       </main>
