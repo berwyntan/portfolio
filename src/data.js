@@ -5,7 +5,7 @@ export default [
         gif: "https://drive.google.com/uc?id=1NHqG_6Et5fpcRh72ZgKuOsQ5IF4QM5R9",
         header: "Astronomy App II",
         subHeader: "Personal project",
-        description: "Added backend, individual routes, authentication, validation, persistent login and automated testing to the frontend project",
+        description: "Added backend, individual routes, authentication, validation, persistent login with JWT and automated testing to the frontend project",
         appLink: "https://astronomy-app-2.vercel.app",
         githubLink: "https://github.com/berwyntan/astronomy-app-2"
     },
