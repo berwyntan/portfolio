@@ -33,7 +33,7 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 
@@ -61,7 +61,7 @@ export default function Album() {
               Hi, I am Berwyn.
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Exploring technology. Switched from interior design to software engineering. 
+              Full stack developer. Exploring technology to solve problems. 
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -69,9 +69,17 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
+
+              <Link href="https://www.dropbox.com/s/885phqwg3o8rwag/CV%2010%20Nov%202022.pdf?dl=0" 
+                target="_blank" color='inherit' underline="none">
+                <Button variant="contained">CV</Button>
+              </Link>
+
               <Link href="/about" color='inherit' underline="none">
-                <Button variant="contained">PROFILE</Button>
+                <Button variant="outlined">PROFILE</Button>
               </Link>  
+
+                
               
               {/* <Button variant="outlined">Get in touch</Button> */}
             </Stack>

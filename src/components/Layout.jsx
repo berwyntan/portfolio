@@ -21,6 +21,9 @@ export default function Layout () {
           
           <Box sx={{display: 'flex', justifyContent: 'flex-start', flexGrow: 1}}>           
             <Button component="a" href="/" color='inherit' size='large' variant='solid' sx={{ '&:hover': { color: '#d7d8d9' }}}>PORTFOLIO</Button>
+            <Button component="a" href="/about" color='inherit' size='large' variant='solid' sx={{ '&:hover': { color: '#d7d8d9' }}}>PROFILE</Button>
+            <Button component="a" href="https://www.dropbox.com/s/885phqwg3o8rwag/CV%2010%20Nov%202022.pdf?dl=0" 
+                target="_blank" color='inherit' size='large' variant='solid' sx={{ '&:hover': { color: '#d7d8d9' }}}>CV</Button>
           </Box>  
             
           <Box sx={{justifyContent: 'flex-end'}}>

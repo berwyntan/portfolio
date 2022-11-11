@@ -32,11 +32,11 @@ export default function About () {
             //   variant="h6"  
               sx={{ my: 2 }}           
             >
-              Junior software engineer with a previous career in interior design. Self starter with interests in technology, 
-              psychology and decision making.
+              Junior software engineer with a previous career in commercial interior design. Wide skill set includes MERN stack software development, project management, and operations. Adept problem solver with ~10 years of site experience, stakeholder management and space planning built on a foundation in mechanical engineering (systems).
+
               
             </Typography>
-            <Typography             
+            {/* <Typography             
               align="center"
               color="text.primary" 
             //   variant="h6"  
@@ -45,7 +45,7 @@ export default function About () {
               Transferable skills include: problem solving, project management,
               stakeholder management, design and business processes.
               
-            </Typography>
+            </Typography> */}
 
             <Typography
               variant="h5"
@@ -77,10 +77,14 @@ export default function About () {
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 1 }}>
-              General Assembly: Software Engineering Immersive - 2022
+            CS50's Introduction to Computer Science - HarvardX CS50x (Verified track): Nov - Dec 2022              
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 1 }}>
+            Software Engineering Immersive - General Assembly: Jun - Dec 2022
             </Typography>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              Nanyang Technological University: Mechanical Engineering - 2005 to 2009
+            Bachelor of Mechanical Engineering (3rd class Honours, GPA: 3.47) - Nanyang Technological University
+
             </Typography>
 
         </Container>
